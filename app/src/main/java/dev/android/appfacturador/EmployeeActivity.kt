@@ -161,7 +161,7 @@ class EmployeeActivity : AppCompatActivity() {
 
     private fun deleteEmployee(empleado: EMPLEADO) {
         val retrofitBuilder = Retrofit.Builder()
-            .baseUrl("https://appfacturador-b516d-default-rtdb.firebaseio.com/")
+            .baseUrl(Constants.DATABASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(EmployeeDao::class.java)

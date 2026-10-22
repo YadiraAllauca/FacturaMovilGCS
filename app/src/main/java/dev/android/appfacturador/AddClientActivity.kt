@@ -212,7 +212,7 @@ class AddClientActivity : AppCompatActivity() {
 
     private fun addClient(cliente: CLIENTE) {
         val retrofitBuilder = Retrofit.Builder()
-            .baseUrl("https://appfacturador-b516d-default-rtdb.firebaseio.com/")
+            .baseUrl(Constants.DATABASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ClientDao::class.java)
@@ -233,7 +233,7 @@ class AddClientActivity : AppCompatActivity() {
 
     private fun updateClient(cliente: CLIENTE) {
         val retrofitBuilder = Retrofit.Builder()
-            .baseUrl("https://appfacturador-b516d-default-rtdb.firebaseio.com/")
+            .baseUrl(Constants.DATABASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ClientDao::class.java)

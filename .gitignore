@@ -1,0 +1,27 @@
+# Android Studio and Gradle outputs
+**/.idea/
+*.iml
+.gradle/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# Per-developer Firebase configuration and signing material
+google-services.json
+*.jks
+*.keystore
+*.p12
+*.pfx
+key.properties
+.env
+.env.*
+!.env.example
+
+# Local tools and portfolio handoff
+.agents/
+.codex/
+.aws/
+handoff-perfil-github-yadira*.md
+.DS_Store
