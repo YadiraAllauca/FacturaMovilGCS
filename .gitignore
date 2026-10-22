@@ -23,5 +23,4 @@ key.properties
 .agents/
 .codex/
 .aws/
-handoff-perfil-github-yadira*.md
 .DS_Store
